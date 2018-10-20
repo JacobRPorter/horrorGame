@@ -1,9 +1,12 @@
-<div class="text-container">
-  <p *ngIf='gamestart'>When I first moved into this apartment</p>
-  <p *ngIf='continue1'>The snow was falling, and all was quiet</p>
-  <p *ngIf='continue2'>But all that would change in time</p>
-</div>
+<div class="opening-container">
+  <div class="text-container">
+    <div class="user-text">
+      <span id="blinker" class="blinker">|</span>
+    </div>
+  </div>
 
-<div class="button-area" (click)="gameContinue(1)">
+  <div class="button-area"
+       (click)="gameContinue()">
     <p-button label="Continue"></p-button>
+  </div>
 </div>
