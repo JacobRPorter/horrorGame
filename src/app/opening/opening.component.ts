@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class OpeningComponent implements OnInit {
 
   public gamestart: Boolean = false;
+  public continue1: Boolean = false;
 
   constructor() { }
 
@@ -15,7 +16,14 @@ export class OpeningComponent implements OnInit {
     this.gamestart = true;
   }
 
-  public start() {
+
+  public gameContinue(event) {
+    switch (event) {
+      case 1: {
+        this.continue1 = true;
+        break;
+      }
+    }
 
   }
 
