@@ -4,8 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { OpeningComponent } from './opening/opening.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/opening', pathMatch: 'full'},
   { path: 'opening', component: OpeningComponent }
-]
+];
 
 @NgModule({
   imports: [
