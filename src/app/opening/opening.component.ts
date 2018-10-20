@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpeningComponent implements OnInit {
 
+  public gamestart: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+    this.gamestart = true;
+  }
+
+  public start() {
+
   }
 
 }

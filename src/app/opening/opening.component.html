@@ -1,2 +1,9 @@
-<p>When I first moved into this apartment</p>
-<p>The snow was falling, and all was quiet</p>
+<div class="text-container">
+  <p *ngIf='gamestart'>When I first moved into this apartment</p>
+  <p *ngIf='continue1'>The snow was falling, and all was quiet</p>
+  <p *ngIf='continue2'>But all that would change in time</p>
+</div>
+
+<div (click)="start">
+    <p-button label="What's Outside?"></p-button>
+</div>
