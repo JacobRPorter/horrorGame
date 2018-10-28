@@ -3,3 +3,14 @@
   background-color: black;
   height: 100vh;
 }
+
+.action-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  button {
+    width: 120px;
+    margin: 10px;
+  }
+}

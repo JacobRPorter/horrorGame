@@ -1,1 +1,27 @@
 <router-outlet></router-outlet>
+<div class="action-container">
+  <ng-container *ngIf="inside; else outside">
+    <a routerLink="/snow"
+       (click)="lookOutside()">
+      <button pButton
+              type="button"
+              label="Look Outside"
+              class="ui-button-raised ui-button-info"></button>
+    </a>
+  </ng-container>
+  <ng-template #outside>
+    <a routerLink="/opening"
+       (click)="lookAtComputer()">
+      <button pButton
+              type="button"
+              label="Look at Computer"
+              class="ui-button-raised ui-button-info"></button>
+    </a>
+  </ng-template>
+  <div (click)="gameContinue()">
+    <button pButton
+            type="button"
+            label="Continue"
+            class="ui-button-raised ui-button-info"></button>
+  </div>
+</div>
